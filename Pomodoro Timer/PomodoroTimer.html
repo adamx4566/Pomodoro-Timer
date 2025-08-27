@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="PomodoroTimer.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Pomodoro Timer</h1>
+      <div class="status">
+        <span id="phaseLabel">Work</span>
+        <span class="dot">•</span>
+        <span>Cycle: <strong id="cycleCount">0</strong></span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="display">25:00</div>
+
+      <div class="controls">
+        <button id="startPauseBtn" class="btn primary">Start</button>
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="skipBtn" class="btn">Skip</button>
+      </div>
+
+      <section class="modes">
+        <button data-mode="work"  class="mode-btn active">Work</button>
+        <button data-mode="short" class="mode-btn">Short Break</button>
+        <button data-mode="long"  class="mode-btn">Long Break</button>
+      </section>
+
+      <section class="settings">
+        <h2>Settings</h2>
+        <div class="grid">
+          <label>Work (min)
+            <input type="number" id="workInput" min="1" max="120" value="25">
+          </label>
+          <label>Short Break (min)
+            <input type="number" id="shortInput" min="1" max="60" value="5">
+          </label>
+          <label>Long Break (min)
+            <input type="number" id="longInput" min="1" max="90" value="15">
+          </label>
+          <label>Cycles until Long Break
+            <input type="number" id="cyclesInput" min="1" max="12" value="4">
+          </label>
+        </div>
+        <div class="toggles">
+          <label>
+            <input type="checkbox" id="autoStart" checked>
+            Auto-start next session
+          </label>
+          <label>
+            <input type="checkbox" id="soundToggle" checked>
+            Sound at end
+          </label>
+        </div>
+        <div class="settings-actions">
+          <button id="applyBtn" class="btn">Apply</button>
+          <button id="saveBtn" class="btn">Save as default</button>
+        </div>
+        <p class="hint">Shortcuts: Space = Start/Pause, R = Reset, N = Skip</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="PomodoroTimer.js"></script>
+</body>
+</html>
