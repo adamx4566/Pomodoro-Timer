@@ -16,3 +16,6 @@ It helps you manage work and break sessions following the Pomodoro technique.
 - HTML5
 - CSS3
 - Vanilla JavaScript
+
+<img src="Notes App/pictures/NotesApp.png" alt="NotesApp Preview" width="500">
+
