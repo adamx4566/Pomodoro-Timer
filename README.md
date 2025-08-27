@@ -17,5 +17,5 @@ It helps you manage work and break sessions following the Pomodoro technique.
 - CSS3
 - Vanilla JavaScript
 
-<img src="Pomodoro Timer/pictures/PomodoroTimer.png" alt="PomodoroTimer Preview" width="500">
+<img src="Pomodoro Timer/pictures/PomodoroTimer.png" alt="PomodoroTimer Preview" width="800">
 
